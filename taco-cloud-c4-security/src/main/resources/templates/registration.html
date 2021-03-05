@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http:www.themeleaf.org">
+    <head>
+        <title>
+            taco cloud register.
+        </title>
+    </head>
+
+    <body>
+        <h1>registration</h1>
+        <img th:src="@{/images/TacoCloud.png}" alt="none" />
+
+        <form method="Post" th:action="@{/register}" id="registerForm">
+            <label for="userName">username:</label>
+            <input type="text" name="userName" /><br/>
+
+            <label for="password">password:</label>
+            <input type="password" name="password" /><br/>
+
+            <label for="confirm">confirm password:</label>
+            <input type="password" name="confirm" /><br/>
+
+            <label for="fullname">fullname:</label>
+            <input type="text" name="fullname" /><br/>
+
+            <label for="street">street:</label>
+            <input type="text" name="street" /><br/>
+
+            <label for="city">city:</label>
+            <input type="text" name="city" /><br/>
+
+            <label for="state">state:</label>
+            <input type="text" name="state" /><br/>
+
+            <label for="zipCode">zipCode:</label>
+            <input type="text" name="zipCode" /><br/>
+
+            <label for="phoneNumber">phoneNumber:</label>
+            <input type="text" name="phoneNumber" /><br/>
+        </form>
+
+    </body>
+</html>
